@@ -55,9 +55,9 @@
 
         layer_2 {
             bindings = <
-&trans      &trans   &trans
-&trans      &trans   &kp PG_UP
-&kp DELETE  &kp END  &trans
+&kp C_PAUSE  &kp PRINTSCREEN  &to 0
+&kp INS      &kp HOME         &kp PG_UP
+&kp DELETE   &kp END          &kp PAGE_DOWN
             >;
         };
     };
