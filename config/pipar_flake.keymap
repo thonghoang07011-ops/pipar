@@ -29,12 +29,12 @@
 
             display-name = "default";
             bindings = <
-&kp Q  &kp W  &kp E
-&kp A  &kp S  &kp D
-&kp Z  &mo 2  &mo 1
+&kp TAB         &kp LEFT_WIN    &to 1
+&kp BACKSPACE   &kp UP_ARROW    &kp ENTER
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         function_layer {
@@ -45,7 +45,7 @@
 
             display-name = "function";
             bindings = <
-&bt BT_CLR    &none         &kp E
+&bt BT_CLR    &none         &to 2
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
 &bt BT_SEL 3  &bt BT_SEL 4  &trans
             >;
@@ -55,9 +55,9 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans
-&trans  &trans  &trans
-&trans  &trans  &trans
+&trans      &trans   &trans
+&trans      &trans   &kp PG_UP
+&kp DELETE  &kp END  &trans
             >;
         };
     };
