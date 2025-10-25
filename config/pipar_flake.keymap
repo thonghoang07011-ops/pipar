@@ -29,9 +29,9 @@
 
             display-name = "default";
             bindings = <
-&kp C_MUTE      &kp LEFT_WIN    &to 1
-&kp BACKSPACE   &kp UP_ARROW    &kp ENTER
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp C_MUTE  &kp K_PLAY_PAUSE  &to 1
+&kp LC(C)   &kp LC(V)         &kp ENTER
+&kp LA(F4)  &kp C_AL_CALC     &kp C_POWER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
